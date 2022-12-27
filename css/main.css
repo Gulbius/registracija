@@ -7,13 +7,16 @@ main{
     width: 99vw;
     height: 100vh;
     font-family:  Helvetica, sans-serif;
+    
 
 }
-
+div{
+    display: inline-block;
+}
 .container{
-    width: 400px;
-    height: 520px;
-    margin-left: calc((100% - 400px)/2);
+    width: 380px;
+    height: 450px;
+    margin-left: calc((100% - 380px)/2);
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.4);
     
@@ -28,29 +31,70 @@ main{
 h1{
     color: white;
     text-align: center;
-    padding: 35px;
+    padding: 25px;
+    
     
 }
-input {
-    width: 330px;
+input[type="text"],[type="password"] {
+    width: 290px;
     display: block;
-    margin: 30px;
-    margin-left: 30px;
-    height: 30px;
+    margin: 15px;
+    margin-left: 40px;
+    height: 25px;
     border: 0;
     padding: 0;
     border-radius: 20px;
+    padding-left: 15px;
+    box-shadow: 0.5px 0.5px 2.5px rgb(187, 42, 98);
 }
  
-.inputcontainer > *{
+.inputcontainer > input{
     display: inline-block;
-    width: 147px;
-    margin: 0 0 30px 30px;
+    width: 132px;
+    margin: 0 0 0px 40px;
     float: left;
-    border: 0;
-    padding: 0;
     border-radius: 20px;
-
+    padding-left: 15px;
     
+}
+.inputcontainer > :nth-child(2){
+    margin-left: 15px;
+}
+#cb{
+    display: inline-block;
+    box-shadow: 0px 0px 2.5px rgb(187, 42, 98) ;
+    margin-left: 100px;
+    width: 18px;
+    height: 20px;
+    padding-top: 10px;
 
 }
+#cbcontainer{
+    padding: top 10px;
+   
+    
+}
+#textbox{
+   
+    vertical-align: top;
+    padding-top: 3px;
+    font-size: 18px;
+}
+a{
+    color: aqua;
+    text-decoration: none;
+
+}
+button{
+    margin-left: 85px;
+    padding: 15px 60px;
+    border-radius: 35px;
+    margin-top: 10px;
+    border: none;
+    background-color: aqua;
+    font-weight: 600;
+    color:aliceblue;
+    box-shadow: 0px 1.5px 0px 1.5px rgb(14, 154, 229);
+    
+}
+
